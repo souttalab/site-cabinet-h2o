@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500;700&family=Lilita+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
 </head>
 <body>
 
@@ -18,12 +19,20 @@
       Dr Julien Lagana
       <span>Cabinet médical — Immeuble H2O</span>
     </div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="menu-principal">
+      <li class="nav-mobile"><a href="index.html">Accueil</a></li>
       <li><a href="index.html#presentation">Le médecin</a></li>
-      <li><a href="index.html#specialites">Spécialités</a></li>
+      <li class="nav-desktop"><a href="index.html#specialites">Spécialités</a></li>
+      <li class="nav-mobile"><a href="sommeil.html">Sommeil</a></li>
+      <li class="nav-mobile"><a href="sexologie.html" aria-current="page">Sexologie</a></li>
+      <li class="nav-mobile"><a href="tabacologie.html">Tabacologie</a></li>
+      <!-- MASQUÉ (Bien vieillir) : <li class="nav-mobile"><a href="bien-vieillir.html">Bien vieillir</a></li> -->
       <li><a href="index.html#infos">Infos pratiques</a></li>
     </ul>
     <a href="https://www.doctolib.fr/medecin-generaliste/la-grande-motte/julien-lagana" class="nav-rdv" target="_blank" rel="noopener noreferrer">Prendre rendez-vous</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- HERO -->
