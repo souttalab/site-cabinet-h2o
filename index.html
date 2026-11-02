@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr Julien Lagana — Cabinet médical, La Grande-Motte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-brand">
+      Dr Julien Lagana
+      <span>Cabinet médical — Immeuble H2O</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#presentation">Le médecin</a></li>
+      <li><a href="#specialites">Spécialités</a></li>
+      <li><a href="#infos">Infos pratiques</a></li>
+    </ul>
+    <a href="https://www.doctolib.fr/medecin-generaliste/la-grande-motte/julien-lagana" class="nav-rdv" target="_blank" rel="noopener noreferrer">Prendre rendez-vous</a>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <section class="carousel" id="carousel">
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- Slide 1 : Accueil -->
+      <div class="carousel-slide">
+        <img src="images/slide-accueil.jpg" alt="Côte méditerranéenne">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Votre santé, autrement</h1>
+          <p>Sommeil, sexualité, sevrage tabagique, hygiène de vie. Une approche globale et bienveillante, au bord de la Méditerranée.</p>
+          <a href="https://www.doctolib.fr/medecin-generaliste/la-grande-motte/julien-lagana" class="nav-rdv" target="_blank" rel="noopener noreferrer">Prendre rendez-vous</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 : Sommeil -->
+      <div class="carousel-slide">
+        <img src="images/slide-sommeil.jpg" alt="Sommeil">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Sommeil</h1>
+          <p>Insomnie, apnée du sommeil, parasomnies... retrouvez un sommeil réparateur.</p>
+          <a href="sommeil.html" class="btn-outline">En savoir plus</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 : Sexologie -->
+      <div class="carousel-slide">
+        <img src="images/slide-sexologie.jpg" alt="Sexologie">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Sexologie</h1>
+          <p>Troubles du désir, de l'érection, éjaculation précoce... un accompagnement en toute confidentialité.</p>
+          <a href="sexologie.html" class="btn-outline">En savoir plus</a>
+        </div>
+      </div>
+
+      <!-- Slide 4 : Tabacologie -->
+      <div class="carousel-slide">
+        <img src="images/slide-tabacologie.jpg" alt="Tabacologie">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Tabacologie</h1>
+          <p>Sevrage tabagique, substitution nicotinique, un accompagnement personnalisé vers la liberté.</p>
+          <a href="tabacologie.html" class="btn-outline">En savoir plus</a>
+        </div>
+      </div>
+
+      <!-- MASQUÉ (Bien vieillir) : Slide 5
+      <div class="carousel-slide">
+        <img src="images/slide-bienvieillir.jpg" alt="Bien vieillir">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Bien vieillir</h1>
+          <p>Alimentation, activité physique, relaxation... les piliers de votre équilibre de vie.</p>
+          <a href="bien-vieillir.html" class="btn-outline">En savoir plus</a>
+        </div>
+      </div>
+      -->
+
+    </div>
+
+    <button class="carousel-arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-arrow next" onclick="moveSlide(1)">&#10095;</button>
+
+    <div class="carousel-dots" id="carouselDots">
+      <button class="carousel-dot active" onclick="goToSlide(0)"></button>
+      <button class="carousel-dot" onclick="goToSlide(1)"></button>
+      <button class="carousel-dot" onclick="goToSlide(2)"></button>
+      <button class="carousel-dot" onclick="goToSlide(3)"></button>
+      <!-- MASQUÉ (Bien vieillir) : <button class="carousel-dot" onclick="goToSlide(4)"></button> -->
+    </div>
+  </section>
+
+  <!-- PRESENTATION -->
+  <section class="section" id="presentation">
+    <div class="presentation">
+      <img src="images/portrait.png" alt="Dr Julien Lagana" class="portrait">
+      <div class="presentation-text">
+        <h3>Dr Julien Lagana</h3>
+        <div class="diplomes">Médecin généraliste — Titulaire des DIU de tabacologie, sexologie, médecine morphologique et anti-âge, et dépistage d'apnée de sommeil</div>
+        <p>Médecin généraliste depuis 2011, j'ai toujours accordé une place particulière au bien-être de mes patients, au-delà du simple traitement des symptômes.<br>
+        Que vous veniez pour des troubles du sommeil, une question liée à la sexualité, un sevrage tabagique ou simplement pour prendre soin de votre santé sur le long terme, je vous accueille dans un cadre bienveillant, sans jugement.<br>
+        Ma formation dans ces différents domaines me permet de mieux comprendre votre situation dans sa globalité, au delà du motif de consultation. Chaque patient est différent, et chaque prise en charge s'adapte à votre rythme et à vos besoins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALITES -->
+  <section class="section section-menthe" id="specialites">
+    <h2 class="section-title">Domaines de consultation</h2>
+    <p class="section-subtitle">Cliquez sur un domaine pour en savoir plus</p>
+    <!-- Classe "trois" : disposition à 3 cartes (Sommeil mis en avant). À retirer quand Bien vieillir sera réaffiché -->
+    <div class="specs-grid trois">
+
+      <a href="sommeil.html" class="spec-card">
+        <img src="images/card-sommeil.jpg" alt="Sommeil" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h4>Sommeil</h4>
+          <p>Insomnie, apnée du sommeil, parasomnies, troubles du rythme circadien</p>
+          <span class="lien">En savoir plus &#8594;</span>
+        </div>
+      </a>
+
+      <a href="sexologie.html" class="spec-card">
+        <img src="images/card-sexologie.jpg" alt="Sexologie" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h4>Sexologie</h4>
+          <p>Troubles du désir, de l'érection, éjaculation précoce, addictions comportementales</p>
+          <span class="lien">En savoir plus &#8594;</span>
+        </div>
+      </a>
+
+      <a href="tabacologie.html" class="spec-card">
+        <img src="images/card-tabacologie.jpg" alt="Tabacologie" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h4>Tabacologie</h4>
+          <p>Sevrage tabagique, substitution nicotinique, accompagnement personnalisé</p>
+          <span class="lien">En savoir plus &#8594;</span>
+        </div>
+      </a>
+
+      <!-- MASQUÉ (Bien vieillir) : carte
+      <a href="bien-vieillir.html" class="spec-card">
+        <img src="images/card-bienvieillir.jpg" alt="Bien vieillir" class="card-bg">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h4>Bien vieillir</h4>
+          <p>Alimentation, activité physique, relaxation, micro-nutrition</p>
+          <span class="lien">En savoir plus &#8594;</span>
+        </div>
+      </a>
+      -->
+
+    </div>
+  </section>
+
+  <!-- AVIS PATIENTS -->
+  <section class="avis-section">
+    <div class="avis-wrapper">
+
+      <div class="avis-left">
+        <div class="avis-initiales">
+          <div class="avis-initiale-small">L</div>
+          <div class="avis-initiale-small">M</div>
+          <div class="avis-initiale-small">E</div>
+          <div class="avis-initiale-small">T</div>
+        </div>
+        <h2>Ce que disent nos patients</h2>
+        <p>Ils nous ont fait confiance et partagent aujourd'hui leur expérience. Découvrez ce que nos patients pensent de leur prise en charge au cabinet.</p>
+      </div>
+
+      <div class="avis-right">
+        <div class="avis-quote">"</div>
+        <div class="avis-track" id="avisTrack">
+
+          <div class="avis-slide">
+            <p class="avis-texte">Très bon médecin, à l'écoute et très professionnel. Je suis venu pour des problèmes de sommeil qui duraient depuis plusieurs mois. La consultation a été très complète et j'ai enfin eu des explications claires sur ce qui pouvait être à l'origine de mes difficultés. Je recommande vraiment.</p>
+            <span class="avis-nom">Valérie L.</span>
+          </div>
+
+          <div class="avis-slide">
+            <p class="avis-texte">Médecin très à l'écoute et surtout très à l'aise pour parler de sujets parfois difficiles. J'ai apprécié son approche, sans jugement et avec beaucoup de professionnalisme. Les explications étaient simples et la consultation s'est vraiment bien passée. Je recommande.</p>
+            <span class="avis-nom">François M.</span>
+          </div>
+
+          <div class="avis-slide">
+            <p class="avis-texte">Excellent médecin généraliste. Prend le temps d'écouter, pose les bonnes questions et explique clairement les choses. On sent qu'il s'intéresse vraiment à la personne et pas uniquement au problème pour lequel on vient consulter. Très professionnel et bienveillant.</p>
+            <span class="avis-nom">William E.</span>
+          </div>
+
+          <div class="avis-slide">
+            <p class="avis-texte">Consultation en sexologie très agréable malgré un sujet pas forcément facile à aborder. Beaucoup d’écoute et aucune gêne. Je recommande.</p>
+            <span class="avis-nom">Robert T.</span>
+          </div>
+
+        </div>
+
+        <div class="avis-nav">
+          <button class="avis-arrow" onclick="moveAvis(-1)">&#10094;</button>
+          <div class="avis-bars">
+            <button class="avis-bar active" onclick="goToAvis(0)"></button>
+            <button class="avis-bar" onclick="goToAvis(1)"></button>
+            <button class="avis-bar" onclick="goToAvis(2)"></button>
+            <button class="avis-bar" onclick="goToAvis(3)"></button>
+          </div>
+          <button class="avis-arrow" onclick="moveAvis(1)">&#10095;</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFOS PRATIQUES -->
+  <section class="section section-menthe" id="infos">
+    <h2 class="section-title">Votre consultation</h2>
+    <p class="section-subtitle">Cabinet médical — Immeuble H2O, La Grande-Motte</p>
+
+    <div class="infos-wrapper">
+      <div class="infos-left">
+        <img src="images/architecture-h2o.jpeg" alt="Immeuble H2O, La Grande-Motte">
+        <div class="infos-overlay">
+          <p></p>
+        </div>
+      </div>
+      <div class="infos-right">
+        <div class="info-item">
+          <div class="info-icon">&#9906;</div>
+          <div>
+            <h5>Adresse</h5>
+            <p>Cabinet médical, Immeuble H2O, 55 Avenue de Melgueil<br>La Grande-Motte, 34280</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">&#9201;</div>
+          <div>
+            <h5>Horaires</h5>
+            <p>Du Lundi au Jeudi<br>rendez-vous sur Doctolib pour plus de détails</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">&#10010;</div>
+          <div>
+            <h5>Conventionnement</h5>
+            <p>Secteur 1 - Carte Vitale acceptée</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">&#9733;</div>
+          <div>
+            <h5>Moyens de Paiement</h5>
+            <p>CB, espèces</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">&#10003;</div>
+          <div>
+            <h5>Rendez-vous</h5>
+            <p><a href="https://www.doctolib.fr/medecin-generaliste/la-grande-motte/julien-lagana" target="_blank" rel="noopener noreferrer" style="color: var(--emeraude); font-weight: 500;">Prendre rendez-vous sur Doctolib</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">&#9873;</div>
+          <div>
+            <h5>Parking</h5>
+            <p>Parking public, 506 Allée des Jardins, La Grande-Motte</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">&#9830;</div>
+          <div>
+            <h5>Accessibilité</h5>
+            <p>1er étage avec ascenseur, accès sans escalier ou avec rampe jusqu'à la salle de consultation, toilettes accessibles PMR</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPS + RDV -->
+  <section class="section">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.1127478301587!2d4.0873558!3d43.562533699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b697f5aa3e0e39%3A0xe2fa07c87bc31365!2s55%20Av.%20de%20Melgueil%2C%2034280%20La%20Grande-Motte!5e0!3m2!1sfr!2sfr!4v1792088309373!5m2!1sfr!2sfr"
+        width="100%" height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Plan d'accès au cabinet, 55 Avenue de Melgueil, La Grande-Motte">
+      </iframe>
+    </div>
+    <div class="cta-center">
+      <a href="https://www.doctolib.fr/medecin-generaliste/la-grande-motte/julien-lagana" class="btn-primary" target="_blank" rel="noopener noreferrer">Prendre rendez-vous sur Doctolib</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h5>Dr Julien Lagana</h5>
+        <p>Médecin généraliste<br>numéro secrétariat : <a href="tel:+33467605744">+33 4 67 60 57 44</a></p>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <p>
+          <a href="sommeil.html">Sommeil</a><br>
+          <a href="sexologie.html">Sexologie</a><br>
+          <a href="tabacologie.html">Tabacologie</a><br>
+          <!-- MASQUÉ (Bien vieillir) : <a href="bien-vieillir.html">Bien vieillir</a><br> -->
+        </p>
+      </div>
+      <div>
+        <h5>Mentions légales</h5>
+        <p>
+          <a href="mentions-legales.html">Mentions légales</a><br>
+          <a href="#">Politique de confidentialité</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Cabinet médical — Immeuble H2O, 55 Avenue de Melgueil, 34280 La Grande-Motte</div>
+  </footer>
+
+  <!-- CAROUSEL JS -->
+  <script>
+    let currentSlide = 0;
+    // Nombre de slides calculé automatiquement (s'adapte si on masque ou réaffiche une slide)
+    const totalSlides = document.querySelectorAll('.carousel-slide').length;
+    const track = document.getElementById('carouselTrack');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let autoplayInterval;
+
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    function moveSlide(direction) {
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      updateCarousel();
+      resetAutoplay();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+      resetAutoplay();
+    }
+
+    function startAutoplay() {
+      autoplayInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+      }, 5000);
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplayInterval);
+      startAutoplay();
+    }
+
+    startAutoplay();
+
+    // Carousel avis
+    let currentAvis = 0;
+    const totalAvis = 4;
+    const avisTrack = document.getElementById('avisTrack');
+    const avisBars = document.querySelectorAll('.avis-bar');
+
+    function updateAvis() {
+      avisTrack.style.transform = `translateX(-${currentAvis * 100}%)`;
+      avisBars.forEach((bar, i) => {
+        bar.classList.toggle('active', i === currentAvis);
+      });
+    }
+
+    function moveAvis(direction) {
+      currentAvis = (currentAvis + direction + totalAvis) % totalAvis;
+      updateAvis();
+    }
+
+    function goToAvis(index) {
+      currentAvis = index;
+      updateAvis();
+    }
+  </script>
+
+</body>
+</html>
